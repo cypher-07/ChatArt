@@ -12,4 +12,7 @@ public class Consersation {
     public ArrayList<Message> getListMessageData() {
         return listMessageData;
     }
+    public void setListMessageData(ArrayList<Message> listMessageData) {
+        this.listMessageData = listMessageData;
+    }
 }

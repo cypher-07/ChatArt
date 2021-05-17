@@ -22,7 +22,13 @@ public class ListFriend {
         }
         return "";
     }
-
+    public int total() {
+        int sum = 0;
+        for(int i=0; i<listFriend.size();i++) {
+            sum = sum+ Integer.parseInt(listFriend.get(i).id);
+        }
+        return sum;
+    }
     public void setListFriend(ArrayList<Friend> listFriend) {
         this.listFriend = listFriend;
     }

@@ -10,4 +10,11 @@ public class Status{
         isOnline = false;
         timestamp = 0;
     }
+    public boolean changeStatus() {
+        isOnline = true;
+        return true;
+    }
+    public boolean getStatus() {
+        return isOnline;
+    }
 }

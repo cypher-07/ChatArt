@@ -8,6 +8,7 @@ public class User {
     public String avata;
     public Status status;
     public Message message;
+    public String password;
 
 
     public User(){
@@ -19,5 +20,17 @@ public class User {
         message.idSender = "0";
         message.text = "";
         message.timestamp = 0;
+    }
+    public boolean registration(String email,String username, String password) {
+        this.password = password;
+        this.name = username;
+        this.email = email;
+        return true;
+    }
+    public boolean login(String email, String password) {
+        if(email==this.email && password == this.password) {
+            return true;
+        }
+        return false;
     }
 }
