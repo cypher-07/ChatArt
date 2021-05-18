@@ -18,7 +18,7 @@ Android, Java
 
 #### Architecture
 
-Model-View-Controller (MVVC)
+Model-View-Controller (MVC)
 
 #### Firebase
 
